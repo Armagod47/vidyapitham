@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* GLOBAL */
+body {
+  font-family: "Oswald", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-group {
+  width: 150px;
+  text-transform: capitalize;
+  padding: 10px;
+  font-size: 1.12rem;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-group:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease;
+  border: 1px solid black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aliceblue;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* .brand-logo {
+  width: 70px;
+  height: 70px;
+} */
+
+.navbar > span {
+  /* background-color: gray; */
+  width: 80%;
+}
+
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-items {
+  display: inline-flex;
+  width: 50%;
+  /* background-color: red; */
+  justify-content: space-evenly;
+}
+
+/* Hero */
+.hero-section {
+  margin-top: 100px;
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(
+      rgba(180, 180, 183, 0.1),
+      rgba(254, 254, 254, 0.75)
+    ),
+    url("https://static.sadhguru.org/d/46272/1633189170-1633189168727.jpg"); */
+
+  background-image: linear-gradient(
+      rgba(26, 26, 26, 0.1),
+      rgba(137, 137, 137, 0.75)
+    ),
+    url("https://c4.wallpaperflare.com/wallpaper/141/77/72/god-lord-krishna-wallpaper-preview.jpg");
+
+  /* https://c4.wallpaperflare.com/wallpaper/141/77/72/god-lord-krishna-wallpaper-preview.jpg */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-headings {
+  margin-left: 150px;
+  color: white;
+}
+
+.top-text {
+  font-size: 1.8rem;
+}
+
+.mid-text {
+  font-size: 5rem;
+}
+
+.bottom-text {
+  font-size: 1.5rem;
+}
+
+.hero-btn {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+/* Courses */
+.courses-section {
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-image: url("./img/courses-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* .courses-video {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+} */
+
+.courses-headings {
+  margin-top: 2.5rem;
+}
+.courses-top-text {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.courses-mid-text,
+.courses-bottom-text {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.courses-note-text {
+  font-size: 1.25rem;
+  color: red;
+}
+.courses-cards {
+  width: 90%;
+  height: 600px;
+  padding: 15px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cards-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-img {
+  width: 220px;
+  height: 320px;
+}
+
+.card-item {
+  position: relative;
+}
+
+.card-info {
+  background-color: white;
+  color: red;
+  width: 220px;
+  height: 100px;
+  text-align: center;
+  padding-top: 1.25rem;
+  position: absolute;
+  left: 25px;
+  bottom: -50px;
+}
+
+.course-btn a {
+  color: white;
+}
+
+.course-btn:hover a {
+  color: black;
+}
+/* Upcoming */
+
+.upcoming-section {
+  min-height: 100vh;
+  padding: 50px;
+  background-image: url("https://wallpapercave.com/wp/eRjorvP.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.upcoming-heading {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.event-top-text {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
+
+.event-bottom-text {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+}
+
+.upcoming-event {
+  display: flex;
+}
+
+.upcoming-event-rev {
+  flex-direction: row-reverse;
+}
+
+.event-img-wrap {
+  width: 50%;
+  background-color: red;
+  overflow: hidden;
+}
+
+.event-img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.event-img-wrap:hover .event-img {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.event-info-wrap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 4px;
+  background-color: white;
+}
+
+.event-date-location,
+.event-heading {
+  margin-bottom: 1rem;
+}
+
+.event-date-location {
+  font-size: 1.2rem;
+}
+.event-heading {
+  font-size: 1.8rem;
+}
+
+.event-btn {
+  background-color: rgb(6, 190, 98);
+}
+
+.event-btn:hover {
+  border: 1px solid rgb(6, 190, 98);
+}
+
+/* Footer */
+.footer-section {
+  min-height: 80vh;
+  background-color: rgb(70, 70, 70);
+  display: flex;
+  padding: 1rem 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-left-info {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align-last: left;
+  padding-left: 5rem;
+  color: white;
+}
+
+.footer-top-text div {
+  width: 25px;
+  background-color: white;
+  height: 2px;
+}
+
+.footer-icons-wrap {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-icon {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.footer-icon:hover {
+  color: rgb(175, 175, 175);
+}
+
+.footer-right-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrap {
+  padding: 1rem;
+  border-radius: 10px;
+  height: 500px;
+  width: 450px;
+  border: 1px solid white;
+  background-color: rgb(94, 194, 224);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.form-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 350px;
+  height: 35px;
+  padding: 5px;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea {
+  width: 350px;
+  height: 150px;
+  padding: 5px;
+  resize: none;
+}
